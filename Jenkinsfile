@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     env.DOCKER_BUILDKIT = 1
-                    sh 'docker run -e CI=true homaseidg/d-pro npm run test'
+                    sh 'docker run -e CI=true thomaseidg/d-pro npm run test'
                 }
             }
         }
