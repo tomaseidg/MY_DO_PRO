@@ -9,7 +9,7 @@ pipeline {
             steps {
                 script {
                     
-                    sh 'docker build -t thomaseidg/D-PRO -f Dockerfile.dev .'
+                    sh 'docker build -t thomaseidg/d-pro -f Dockerfile.dev .'
                 }
             }
         }
