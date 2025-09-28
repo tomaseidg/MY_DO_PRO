@@ -10,5 +10,5 @@
      steps: 
        - uses: actions/checkout@v2
        - run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-       - run: docker build -t ahmedgamil/react-test -f Dockerfile.dev .
-       - run: docker run -e CI=true ahmedgamil/react-test npm run test
+       - run: docker build -t thomaseidg/d-pro -f Dockerfile.dev .
+       - run: docker run -e CI=true thomaseidg/d-pro npm run test
