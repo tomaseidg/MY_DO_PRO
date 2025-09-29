@@ -23,3 +23,9 @@ jobs:
 
       - name: Run tests
         run: docker run -e CI=true thomaseidg/d-pro npm run test
+
+      - name: Tag Docker image
+        run: docker tag thomaseidg/d-pro thomaseidg/d-pro:latest
+
+      - name: Push Docker image to Docker Hub
+        run: docker push thomaseidg/d-pro:latest
